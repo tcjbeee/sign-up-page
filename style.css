@@ -1,8 +1,36 @@
+@font-face {
+    font-family: odin-font;
+    src: url(Norse-Bold.otf);
+}
+
 body {
     display: flex;
     margin: 0%;
     font-family: Helvetica, Arial, sans-serif;
     background-color: rgb(235, 235, 235);;
+}
+
+.imageHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+#image {
+    height: 98.7vh;
+}
+
+.imagebanner {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.678);
+    color: white;
+    font-size: 60px;
+    font-family: odin-font;
+    top: 20rem;
+    z-index: 0;
 }
 
 body div.right{
@@ -16,9 +44,9 @@ body div.right{
 
 .prompt {
     padding-left: 3rem;
-    text-shadow: 0px 5px 5px #00000044;
+    text-shadow: 5px 5px 1px #00000017;
     margin-bottom: 100px;
-    width: clamp(536px, 100vw, 100vw)
+    width: clamp(536px, 50vw, 50vw);
 }
 
 .signUpHolder {
@@ -30,7 +58,7 @@ body div.right{
     background-color: rgb(255, 255, 255);;
     box-shadow: 0px 10px 20px #00000044;
     height: min(400px, 100%);
-    width: clamp(536px, 100vw, 100vw)
+    width: clamp(536px, 75vw, 75vw)
 }
 
 .form {
@@ -39,6 +67,8 @@ body div.right{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .form div{
