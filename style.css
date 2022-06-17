@@ -19,6 +19,7 @@ body {
 
 #image {
     height: 98.7vh;
+    max-width: 33vw;
 }
 
 .imagebanner {
@@ -27,7 +28,7 @@ body {
     width: 100%;
     background: rgba(0, 0, 0, 0.678);
     color: white;
-    font-size: 60px;
+    font-size: 3vw;
     font-family: odin-font;
     top: 20rem;
     z-index: 0;
@@ -69,6 +70,7 @@ body div.right{
     gap: 20px;
     justify-content: center;
     align-items: center;
+    
 }
 
 .form div{
@@ -96,6 +98,10 @@ input {
     
 }
 
+input:invalid {
+    border-color: rgb(199, 54, 54);
+}
+
 #create {
     display: block;
     position: absolute;
@@ -118,6 +124,6 @@ input {
     font-weight: bold;
 }
 
-a {
-    
+a:visited, a{
+    color: #596D48;
 }

@@ -1,7 +1,6 @@
 // Code for Password Colour Change here
 
 
-
 button = document.querySelector("#create");
 
 button.addEventListener("pointerover", function grow() {
@@ -19,6 +18,22 @@ button.addEventListener("click", function () {
 );
 
 function submitForm() {
+    passwordValue = document.querySelector("#password").value;
+    confirmPasswordValue = document.querySelector("#confirmPassword").value;
+
+    if (confirmPasswordValue == passwordValue) {
     form = document.querySelector("form").submit;
     location.href = "complete.html";
+    }
+
+    else {
+        confirmPassword = document.querySelector("#confirmPassword");
+        passwordText = document.querySelector(".passwordBox");
+        confirmPassword.style.borderColor = "rgb(199, 54, 54)";
+        password.style.borderColor = "rgb(199, 54, 54)";
+        passwordsDoNotMatch = document.createElement("noMatch");
+        passwordsDoNotMatch.style = "color: rgb(199, 54, 54); font-size: 16px;"
+        passwordsDoNotMatch.textContent = "* Passwords do not match.";
+        passwordText.appendChild(passwordsDoNotMatch);
+    }
 }
